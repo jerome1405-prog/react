@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <body>
+
+        <h1> Classes </h1>
+        <script>           
+            class Car{
+                constructor(name) {
+                    this.brand = name;
+                }
+            }
+
+        const mycar = new Car ("Ford <br>");
+
+        document.write(mycar.brand);
+        </script>
+
+        <h1> Method in Classes</h1>
+        <script>
+            class carr {
+                constructor(name2) {
+                    this.brandd = name2;
+                }
+            present() {
+
+                return 'I have a ' + this.brandd;
+            }
+            }
+
+            const mycarr = new carr("Ford <br>");
+            document.write(mycarr.present() + ' <br>');
+
+        </script>
+        
+        <h1> Class Inheritance</h1>
+        <script>
+            class car1 {
+                constructor(name1) {
+                    this.brand1 = name1;
+                }
+            present() {
+                return 'I have a ' + this.brand1;
+            }
+            }
+
+            class Model extends car1 {
+                constructor (name1, mod) {
+                    super (name1);
+                    this.model = mod;
+                }
+                show(){
+                    return this.present() + ' , it is a ' + this.model
+                }
+            }
+
+            const mycar1 = new Model("Ford", "Mustang");
+            document.write(mycar1.show());
+
+        </script>
+    </body>
+</html>
